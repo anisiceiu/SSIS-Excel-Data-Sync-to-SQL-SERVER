@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">ANIS</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAADNHSwxQabEujSBKHg/3e9QAAAAACAAAAAAAQZgAAAAEAACAAAACGYUngmHm+JD3Up9uq1QVlImglqVqEF8y115u+xCxeSAAAAAAOgAAAAAIAACAAAAAyvaKN0sYkforNM6T3BGKlxnO39lCT5kdBwzWReEFJrpAAAADFjPWcCS11vx9Lh5QsTL03eK0j569WzOfdYP8NIO6Tkw8McZLQQIRR8HgsORQhhSIwm10vnycUVf/nrVmJz4ENHhsMAr2MbMfYV9MmqUuol30feoj/8G4axJ1HDEj6whOM1aNQyEpkpUJACL0tpPoQ1sJ43WkcQHeH28tO2OK51aSEDUZvtJcN69QADi2ATWZAAAAANLSIqfW/mEinBO1v0DcwGl0z0iy2D5F15NQwRUDa2Jt7hdN0P64AEy/o0Nkl+gYYIbpsZZ1cmCou04QITfdPaA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAADNHSwxQabEujSBKHg/3e9QAAAAACAAAAAAAQZgAAAAEAACAAAAAQrLMqkqmcfF1gIPdsPsTaJFJ6jcqF6EtJTluw7YPKDwAAAAAOgAAAAAIAACAAAACCQoca5yUUAZsfb68zVQTPXDgiJ9Cqb+14btZ0V7y2f5AAAABie1I4FIuzAX5D1LadS4hMs6NMwXcFGQTUV/OIZrdlStY9tInD1qgGJNMSWDpb8S8R+QceffIey6GdQ3YwupnTppg2LGFZXIV7DD7npe9FZaoMeXXBhD3K2btCTEXw57Dr+erZqG9HiGxajBQiEFHHYhu0t4lTjq8K2k5xPwLnJ7Rfwfmak/qyPSglx8ktZeJAAAAACc9FSViiihs1siwdPtU8N/QIbCUnr40HW5oLm2R18TYJpFjcSrEK/K32kePapx2zeefT6Ae2AkaiCLbv7hcg2g==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -50,21 +50,6 @@
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager.ConnectionString">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Import\Employees.xlsx;Extended Properties="Excel 12.0 XML;HDR=YES";</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
             <SSIS:Parameter SSIS:Name="CM.Excel Connection Manager.ExcelFilePath">
@@ -177,10 +162,10 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">10</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">22</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{386CE20B-6ED5-400E-A223-3A231E35A62B}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{F878FFD8-9382-4810-B365-CC346C17F1DE}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -343,7 +328,12 @@
     </Manifest>
   </DeploymentModelSpecificContent>
   <ControlFlowParts />
-  <Miscellaneous />
+  <Miscellaneous>
+    <ProjectItem>
+      <Name>Excel Connection Manager</Name>
+      <FullPath>Excel Connection Manager</FullPath>
+    </ProjectItem>
+  </Miscellaneous>
   <Configurations>
     <Configuration>
       <Name>Development</Name>

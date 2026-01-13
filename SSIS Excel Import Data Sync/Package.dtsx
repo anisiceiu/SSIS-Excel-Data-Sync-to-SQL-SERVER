@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{386CE20B-6ED5-400E-A223-3A231E35A62B}">
+  DTS:VersionBuild="23"
+  DTS:VersionGUID="{DAB86661-57B8-4280-AC36-0D61C0C5495C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -63,7 +63,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{726F3725-4194-4A45-88A2-8416E9179F46}"
-          SQLTask:SqlStatementSource="&quot;TRUNCATE&quot; TABLE Employees_Staging" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="TRUNCATE TABLE Employees_Staging" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -123,7 +123,7 @@
               <connections>
                 <connection
                   refId="Package\Load Excel To Staging\Excel Source.Connections[OleDbConnection]"
-                  connectionManagerID="{933D9CAC-6763-4720-BCCA-93A152CB2E79}:external"
+                  connectionManagerID="{1C2D3BC0-E583-4768-953E-7294745E3931}:external"
                   connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -397,10 +397,6 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="189,42"
-          Id="Package\Load Excel To Staging"
-          TopLeft="227,64" />
-        <NodeLayout
           Size="170,42"
           Id="Package\Execute SQL Task"
           TopLeft="241,140" />
@@ -408,6 +404,10 @@
           Size="179,42"
           Id="Package\Execute SQL Task 1"
           TopLeft="251,218" />
+        <NodeLayout
+          Size="189,42"
+          Id="Package\Load Excel To Staging"
+          TopLeft="227,64" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="323.75,106">
@@ -473,13 +473,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="144,42"
-          Id="Package\Load Excel To Staging\Excel Source"
-          TopLeft="162,96" />
-        <NodeLayout
           Size="177,42"
           Id="Package\Load Excel To Staging\OLE DB Destination"
           TopLeft="162,180" />
+        <NodeLayout
+          Size="144,42"
+          Id="Package\Load Excel To Staging\Excel Source"
+          TopLeft="162,96" />
         <EdgeLayout
           Id="Package\Load Excel To Staging.Paths[Excel Source Output]"
           TopLeft="234,138">

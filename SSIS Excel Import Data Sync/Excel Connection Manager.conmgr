@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="Excel Connection Manager"
-  DTS:DTSID="{933D9CAC-6763-4720-BCCA-93A152CB2E79}"
+  DTS:DTSID="{1C2D3BC0-E583-4768-953E-7294745E3931}"
   DTS:CreationName="EXCEL">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + @[$Project::ExcelFilePath]   + ";Extended Properties=\"Excel 12.0;HDR=YES\";"</DTS:PropertyExpression>
   <DTS:ObjectData>
     <DTS:ConnectionManager
       DTS:ConnectRetryCount="0"
       DTS:ConnectRetryInterval="0"
-      DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Import\Employees.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+      DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Import\Employees.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
   </DTS:ObjectData>
 </DTS:ConnectionManager>
